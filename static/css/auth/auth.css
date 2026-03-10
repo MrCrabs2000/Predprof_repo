@@ -54,3 +54,8 @@
     font-size: 0.9rem;
     color: var(--text-muted);
 }
+
+.flash-text {
+    color: red;
+    font-size: 0.85rem;
+}

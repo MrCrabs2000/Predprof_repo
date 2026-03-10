@@ -73,6 +73,8 @@ def start_db():
 
             main_admin = User(
                 login='Admin',
+                name='Admin',
+                surname='Admin',
                 password=passwordHash,
                 active=True,
                 fs_uniquifier=str(uuid.uuid4()),
