@@ -1,5 +1,5 @@
-from routs.auth.login import login_page
-from routs.auth.register import register_page
+from routes.auth.login import login_page
+from routes.auth.register import register_page
 
 
 
