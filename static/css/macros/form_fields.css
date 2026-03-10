@@ -1,0 +1,13 @@
+.form-field {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-field__label {
+    margin-left: 8px;
+    width: 100%;
+    color: var(--text-muted);
+    font-size: 0.8em;
+    font-weight: 500;
+}

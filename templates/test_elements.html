@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+
+
+
+{% block content %}
+    <button>Click</button>
+    <button class="accent">Accent</button>
+    <button class="danger">Danger</button>
+    <button class="warning">Warning</button>
+    <a class="button">Link</a>
+
+    <br>
+    <br>
+
+    <input placeholder="some text">
+    <input value="Readonly" readonly>
+    <select>
+        <option value="">Test</option>
+        <option value="">test</option>
+        <option value="">test</option>
+    </select>
+    <select disabled>
+        <option value="">Disabled</option>
+        <option value="">test</option>
+        <option value="">test</option>
+    </select>
+
+    <br>
+    <br>
+
+    <a style="font-size: 20px;">Test link</a>
+{% endblock %}

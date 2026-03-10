@@ -1,0 +1,30 @@
+{% extends 'layouts/base.html' %}
+
+{% import 'macros/form_fields.html' as fields %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="/static/css/macros/form_fields.css">
+    <link rel="stylesheet" href="/static/css/auth/auth.css">
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="auth-wrapper">
+        <div class="auth-form">
+            <h1 class="auth-form__header">Регистрация</h1>
+    
+            <form class="auth-form__form" id="authForm" method="post">
+                {{ fields.input(label="Логин", id="login", name="login", placeholder="Логин") }}
+                {{ fields.input(label="Имя", id="name", name="name", placeholder="Имя") }}
+                {{ fields.input(label="Фамилия", id="surname", name="surname", placeholder="Фамилия") }}
+                {{ fields.input(label="Пароль", id="password", name="password", placeholder="Пароль", type="password") }}
+                {{ fields.input(label="Повтор пароля", id="repeatPassword", name="repeatPassword", placeholder="Повтор пароля", type="password") }}
+            </form>
+            <button class="auth-form__confirm-button accent" form="authForm">Зарегистрироваться</button>
+    
+            <p class="auth-form__link">Есть аккаунт? <a href="/login">Вход</a></p>
+        </div>
+    </div>
+{% endblock %}

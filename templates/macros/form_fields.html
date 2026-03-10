@@ -1,0 +1,12 @@
+{% macro input(id="", name="", label='', type="text", placeholder="", value="", readonly=False) %}
+    <div class="form-field">
+        {% if label %}
+            <label for="{{ id }}" class="form-field__label">{{ label }}</label>
+        {% endif %}
+
+        <input class="form-field__input" id="{{ id }}" name="{{ name }}" type="{{ type }}" placeholder="{{ placeholder }}" value="{{ value }}"
+            {% if readonly %}
+                readonly
+            {% endif %}>
+    </div>
+{% endmacro %}
