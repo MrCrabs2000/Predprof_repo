@@ -1,5 +1,11 @@
 {% extends 'layouts/base.html' %}
 
+{% import 'macros/form_fields.html' as fields  %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="static/css/macros/form_fields.css">
+{% endblock %}
 
 
 {% block content %}
@@ -24,6 +30,15 @@
         <option value="">test</option>
         <option value="">test</option>
     </select>
+
+    {{ fields.checkbox(label="Checkbox") }}
+
+    <div>
+        
+        {{ fields.radio_button(label="RadioButton") }}
+        {{ fields.radio_button(label="RadioButton") }}
+
+    </div>
 
     <br>
     <br>

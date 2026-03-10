@@ -16,11 +16,11 @@
             <h1 class="auth-form__header">Регистрация</h1>
     
             <form class="auth-form__form" id="authForm" method="post">
-                {{ fields.input(label="Логин", id="login", name="login", placeholder="Логин") }}
-                {{ fields.input(label="Имя", id="name", name="name", placeholder="Имя") }}
-                {{ fields.input(label="Фамилия", id="surname", name="surname", placeholder="Фамилия") }}
-                {{ fields.input(label="Пароль", id="password", name="password", placeholder="Пароль", type="password") }}
-                {{ fields.input(label="Повтор пароля", id="repeatPassword", name="repeatPassword", placeholder="Повтор пароля", type="password") }}
+                {{ fields.input(label="Логин", id="login", name="login", placeholder="Логин", required=True) }}
+                {{ fields.input(label="Имя", id="name", name="name", placeholder="Имя", required=True) }}
+                {{ fields.input(label="Фамилия", id="surname", name="surname", placeholder="Фамилия", required=True) }}
+                {{ fields.input(label="Пароль", id="password", name="password", placeholder="Пароль", type="password", required=True) }}
+                {{ fields.input(label="Повтор пароля", id="repeatPassword", name="repeatPassword", placeholder="Повтор пароля", type="password", required=True) }}
             </form>
             <button class="auth-form__confirm-button accent" form="authForm">Зарегистрироваться</button>
     

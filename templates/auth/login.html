@@ -16,8 +16,8 @@
             <h1 class="auth-form__header">Вход</h1>
     
             <form class="auth-form__form" id="authForm" method="post">
-                {{ fields.input(label="Логин", id="login", name="login", placeholder="Логин") }}
-                {{ fields.input(label="Пароль", id="password", name="password", placeholder="Пароль", type="password") }}
+                {{ fields.input(label="Логин", id="login", name="login", placeholder="Логин", required=True) }}
+                {{ fields.input(label="Пароль", id="password", name="password", placeholder="Пароль", type="password", required=True) }}
             </form>
             <button class="auth-form__confirm-button accent" form="authForm">Зарегистрироваться</button>
     
