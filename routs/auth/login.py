@@ -1,6 +1,6 @@
 from flask_security import login_user
 from werkzeug.security import check_password_hash
-from flask import Blueprint, request, render_template, redirect
+from flask import Blueprint, request, render_template, redirect, flash
 
 from database.classes import db, User
 
@@ -16,6 +16,7 @@ def loginpage():
     password = request.form.get('password')
 
     if not all([login, password]):
+        flash('Не все поля заполнены', 'error')
         return redirect('/')
     
     user = db.session.query(User).filter_by(login=login).first()
