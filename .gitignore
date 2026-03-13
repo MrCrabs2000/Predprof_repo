@@ -1,9 +1,5 @@
 .venv
 .idea
 /utils/migrations
-/configs/__pycache__
-/database/__pycache__
 /db
-/routs/__pycache__
-/utils/__pycache__
-/routs/auth/__pycache__
+__pycache__/
